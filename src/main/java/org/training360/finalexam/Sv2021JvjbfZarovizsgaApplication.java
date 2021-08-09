@@ -6,9 +6,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-public class FifaApplication {
+public class Sv2021JvjbfZarovizsgaApplication {
     public static void main(String[] args) {
-        SpringApplication.run(FifaApplication.class, args);
+        SpringApplication.run(Sv2021JvjbfZarovizsgaApplication.class, args);
     }
 
     @Bean
