@@ -1,7 +1,6 @@
 package org.training360.finalexam.players;
 
 import lombok.*;
-import org.training360.finalexam.players.PositionType;
 import org.training360.finalexam.teams.Team;
 
 import javax.persistence.*;
