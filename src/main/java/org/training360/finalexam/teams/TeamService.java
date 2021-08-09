@@ -50,6 +50,7 @@ public class TeamService {
         Team item = repository.findById(id)
                 .orElseThrow(() -> new TeamNotFoundException(id));
         if (player.getTeam() == null && countPosition(id, player.getPosition()) < 2) {
+            playerRepository.save(player);
             item.addPlayer(player);
         }
         return modelMapper.map(item, TeamDTO.class);

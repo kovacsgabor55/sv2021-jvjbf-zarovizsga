@@ -5,7 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.training360.finalexam.players.PlayerDTO;
 
-import java.util.Set;
+import java.util.List;
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -13,5 +13,5 @@ import java.util.Set;
 public class TeamDTO {
     private long id;
     private String name;
-    private Set<PlayerDTO> players;
+    private List<PlayerDTO> players;
 }
