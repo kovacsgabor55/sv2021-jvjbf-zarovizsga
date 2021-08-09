@@ -19,12 +19,9 @@ public class TeamService {
 
     private final PlayerRepository playerRepository;
 
-    //TODO kellenek a playerek is
     public List<TeamDTO> listAll() {
         return repository.findAll().stream().map(item -> modelMapper.map(item, TeamDTO.class))
                 .collect(Collectors.toList());
-
-        //return null;
     }
 
     public TeamDTO create(CreateTeamCommand command) {
